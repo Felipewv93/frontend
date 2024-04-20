@@ -12,7 +12,7 @@
     --title-color: #F0F0F0;
     --text-color: #9a9a9c;
     --link-color: #9a9a9c;
-    --icon-color: #c7c8c9;
+    --icon-color: #be0f0f;
 
 }
 
@@ -80,4 +80,51 @@ body {
 .header-logo .logo {
     width: 3.25rem;
     height: 3.25rem;
+}
+#toggleTheme{
+    font-size: 1.5rem;
+    color: var(--icon-color);
+    cursor: pointer;
+    transition: ease-in-out .4s;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    background: var(--primary-bg-color);
+}
+.menu-item{
+    width: 100%;
+}
+.menu-link{
+    display: flex;
+    align-items: center;
+    gap: .5rem; /* */
+}
+.menu-mobile{
+    width: 100vw; /* vw = viewport widht*/
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid var(--primary-border-color);
+}
+
+.menu-mobile .menu-link {
+    flex-direction: column; /* */
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
+.menu-link.active .menu-icon,
+.menu-link.active .menu-text,
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text{
+    color: var(--primary-color);
+}
+
+.menu-icon, .menu-text{
+    color: var(--text-color);
+}
+.menu-icon{
+    font-size: 1.5rem;
 }
