@@ -19,9 +19,9 @@
 :root[data-theme='light'] {
     --primary-color: #0B0B0F;
     --primary-bg-color: #E9E9E9;
-    --secondary-bg-color: #c7c8c9;
+    --secondary-bg-color: white;
     --primary-border-color: #c7c8c9;
-    --secondary-border-color: ##9a9a9c;
+    --secondary-border-color: #0b0b0f;
 
     --title-color: #0b0b0f;
     --text-color: #28292e;
@@ -298,6 +298,7 @@ p {
     border-radius: 0.5rem;
     object-fit: cover;
     object-position: center;
+    border: 1px solid;
 }
 .card-body {
     display: flex;
